@@ -4,7 +4,7 @@
 #
 Name     : rubygem-code_statistics
 Version  : 0.2.13
-Release  : 4
+Release  : 5
 URL      : https://rubygems.org/downloads/code_statistics-0.2.13.gem
 Source0  : https://rubygems.org/downloads/code_statistics-0.2.13.gem
 Summary  : No detailed summary available
