@@ -4,7 +4,7 @@
 #
 Name     : rubygem-code_statistics
 Version  : 0.2.13
-Release  : 5
+Release  : 6
 URL      : https://rubygems.org/downloads/code_statistics-0.2.13.gem
 Source0  : https://rubygems.org/downloads/code_statistics-0.2.13.gem
 Summary  : No detailed summary available
@@ -61,35 +61,28 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
 pushd %{buildroot}%{gem_dir}/gems/code_statistics-0.2.13
-ruby -I"lib:test" test*/test_*.rb
-ruby -I"lib:test" test*/*_test.rb
+ruby -v -I.:lib:test test*/test_*.rb
+ruby -v -I.:lib:test test*/*_test.rb
 popd
 
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/code_statistics-0.2.13.gem
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/CodeStatistics/CodeStatistics/cdesc-CodeStatistics.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/CodeStatistics/cdesc-CodeStatistics.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/Object/cdesc-Object.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/Object/report_stats-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/page-LICENSE.ri
-/usr/lib64/ruby/gems/2.2.0/doc/code_statistics-0.2.13/ri/page-README_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/.document
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/LICENSE
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/README.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/VERSION
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/bin/code_statistics
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/code_statistics.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/lib/code_statistics.rb
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/lib/code_statistics/code_statistics.rb
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/lib/tasks/code_stats.rb
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/test/code_statistics_test.rb
-/usr/lib64/ruby/gems/2.2.0/gems/code_statistics-0.2.13/test/test_helper.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/code_statistics-0.2.13.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/code_statistics-0.2.13.gem
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/.document
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/LICENSE
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/README.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/VERSION
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/bin/code_statistics
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/code_statistics.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/lib/code_statistics.rb
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/lib/code_statistics/code_statistics.rb
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/lib/tasks/code_stats.rb
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/test/code_statistics_test.rb
+/usr/lib64/ruby/gems/2.3.0/gems/code_statistics-0.2.13/test/test_helper.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/code_statistics-0.2.13.gemspec
 
 %files bin
 %defattr(-,root,root,-)
